@@ -1,0 +1,15 @@
+C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\ApplicationIcon.png
+C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\Background.png
+C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\Indigo.dll
+C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\Indigo.pdb
+C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\AppManifest.xaml
+C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\Indigo.xap
+C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\App.g.cs
+C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\MainPage.g.cs
+C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\Indigo.g.resources
+C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\Indigo.dll
+C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\Indigo.pdb
+C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\XapCacheFile.xml
