@@ -6,13 +6,18 @@
 	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="TaskDetailPage"
-	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
 	x:Class="Indigo.TaskDetail"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
 	SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
 	shell:SystemTray.IsVisible="True">
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar>
+			<shell:ApplicationBarIconButton x:Name="EditTaskAppBarIconButton" Click="EditTaskAppBarIconButton_Click" IconUri="/icons/appbar.favs.addto.rest.png" Text="edit"/>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
 
 	<!--LayoutRoot is the root grid where all page content is placed-->
 	<Grid x:Name="LayoutRoot" Background="Transparent">
@@ -20,7 +25,18 @@
 		<controls:Pivot x:Name="TaskDetailPivot" Title="project indigo">
 			<!--Pivot item one-->
 			<controls:PivotItem x:Name="TaskDetailPivotItem" Header="task detail">
-				<Grid/>
+				<Grid x:Name="ContentPanel">
+					<TextBlock x:Name="TaskTitle" TextWrapping="Wrap" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Text="Test" Margin="8,8,80,0" VerticalAlignment="Top"/>
+					<TextBlock x:Name="TaskNumber" HorizontalAlignment="Right" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Height="57" Width="72" Margin="0,8,8,0" FontSize="{StaticResource PhoneFontSizeExtraLarge}" TextAlignment="Right"/>
+					<TextBlock x:Name="TaskPointsLabel" HorizontalAlignment="Left" Margin="8,69,0,0" TextWrapping="Wrap" Text="Points:" VerticalAlignment="Top" Width="72" FontSize="{StaticResource PhoneFontSizeNormal}"/>
+					<TextBlock x:Name="TaskPointsField" Margin="80,69,8,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" TextAlignment="Right" FontSize="{StaticResource PhoneFontSizeNormal}"/>
+					<TextBlock x:Name="TaskAssignedToLabel" HorizontalAlignment="Left" Margin="8,100,0,0" TextWrapping="Wrap" Text="Assigned to:" VerticalAlignment="Top" FontSize="{StaticResource PhoneFontSizeNormal}"/>
+					<TextBlock x:Name="TaskAssignedToField" Margin="120,100,8,0" TextWrapping="Wrap" Text="mterry" VerticalAlignment="Top" TextAlignment="Right" FontSize="{StaticResource PhoneFontSizeNormal}"/>
+					<TextBlock x:Name="TaskClosedLabel" HorizontalAlignment="Left" Margin="8,131,0,0" TextWrapping="Wrap" Text="Closed:" VerticalAlignment="Top" Width="72" FontSize="{StaticResource PhoneFontSizeNormal}"/>
+					<TextBlock x:Name="TaskClosedField" Margin="84,131,8,0" TextWrapping="Wrap" Text="False" VerticalAlignment="Top" TextAlignment="Right" FontSize="{StaticResource PhoneFontSizeNormal}"/>
+					<TextBlock x:Name="TaskDescriptionLabel" Margin="8,162,0,0" TextWrapping="Wrap" Text="Description:" VerticalAlignment="Top" FontSize="{StaticResource PhoneFontSizeNormal}" HorizontalAlignment="Left"/>
+					<TextBlock x:Name="TaskDescriptionField" Margin="40,193,0,0" TextWrapping="Wrap" Text="This is the description of the task." HorizontalAlignment="Left" Width="376" FontSize="{StaticResource PhoneFontSizeSmall}" VerticalAlignment="Top"/>
+				</Grid>
 			</controls:PivotItem>
 
  			<!--Pivot item two-->

@@ -12,6 +12,12 @@
 	Foreground="{StaticResource PhoneForegroundBrush}"
 	Orientation="Portrait"
 	shell:SystemTray.IsVisible="True" SupportedOrientations="PortraitOrLandscape">
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar>
+			<shell:ApplicationBarIconButton x:Name="SubmitAppBarIconButton" IconUri="/icons/appbar.check.rest.png" Text="create user" Click="Submit_Click"/>
+			<shell:ApplicationBarIconButton x:Name="CancelAppBarIconButton" IconUri="/icons/appbar.close.rest.png" Text="cancel" Click="Cancel_Click"/>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
 
 	<!--LayoutRoot is the root grid where all page content is placed-->
 	<Grid x:Name="LayoutRoot" Background="Transparent">
@@ -32,7 +38,6 @@
 			<PasswordBox x:Name="PasswordPBox"/>
 			<TextBlock TextWrapping="Wrap" Text="confirm password"/>
 			<PasswordBox/>
-			<Button x:Name="CreateNewUserSubmitButton" Content="submit" Width="180"/>
 		</StackPanel>
 
 		<!--ContentPanel - place additional content here-->

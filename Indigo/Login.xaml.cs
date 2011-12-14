@@ -19,5 +19,17 @@ namespace Indigo
         {
             InitializeComponent();
         }
+
+        private void Submit_Click(object sender, System.EventArgs e)
+        {
+        	// TODO: Add event handler implementation here.
+			NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        }
+
+        private void Cancel_Click(object sender, System.EventArgs e)
+        {
+        	// TODO: Add event handler implementation here.
+			NavigationService.GoBack();
+        }
     }
 }

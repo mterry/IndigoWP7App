@@ -1,9 +1,21 @@
-﻿<xapCache source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\Indigo.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="01/12/2011 12:00:22 AM">
+﻿<xapCache source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\Indigo.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="14/12/2011 5:18:23 PM">
   <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="01/12/2011 12:00:22 AM" />
   <file source="C:\Users\mat\Projects\Indigo\Indigo\Background.png" archivePath="Background.png" lastWriteTime="17/01/2011 11:02:00 PM" />
   <file source="C:\Users\mat\Projects\Indigo\Indigo\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="17/01/2011 11:02:00 PM" />
-  <file source="C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\Indigo.dll" archivePath="Indigo.dll" lastWriteTime="01/12/2011 12:00:21 AM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\obj\Debug\Indigo.dll" archivePath="Indigo.dll" lastWriteTime="14/12/2011 5:18:23 PM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="15/09/2011 3:36:26 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\icons\appbar.add.rest.png" archivePath="icons\appbar.add.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\icons\appbar.back.rest.png" archivePath="icons\appbar.back.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\icons\appbar.check.rest.png" archivePath="icons\appbar.check.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\icons\appbar.close.rest.png" archivePath="icons\appbar.close.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\icons\appbar.favs.addto.rest.png" archivePath="icons\appbar.favs.addto.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
   <file source="C:\Users\mat\Projects\Indigo\Indigo\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="17/01/2011 11:02:00 PM" />
-  <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="01/12/2011 12:00:22 AM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\icons\appbar.lock.rest.png" archivePath="icons\appbar.lock.rest.png" lastWriteTime="30/11/2011 4:04:20 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="13/12/2011 12:09:30 AM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\icons\appbar.add.rest.png" archivePath="icons\appbar.add.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\icons\appbar.back.rest.png" archivePath="icons\appbar.back.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\icons\appbar.check.rest.png" archivePath="icons\appbar.check.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\icons\appbar.close.rest.png" archivePath="icons\appbar.close.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\icons\appbar.favs.addto.rest.png" archivePath="icons\appbar.favs.addto.rest.png" lastWriteTime="15/09/2011 3:33:14 PM" />
+  <file source="C:\Users\mat\Projects\Indigo\Indigo\Bin\Debug\icons\appbar.lock.rest.png" archivePath="icons\appbar.lock.rest.png" lastWriteTime="30/11/2011 4:04:20 PM" />
 </xapCache>

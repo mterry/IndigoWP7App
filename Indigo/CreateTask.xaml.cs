@@ -13,16 +13,11 @@ using Microsoft.Phone.Controls;
 
 namespace Indigo
 {
-    public partial class TaskDetail : PhoneApplicationPage
+    public partial class CreateTask : PhoneApplicationPage
     {
-        public TaskDetail()
+        public CreateTask()
         {
             InitializeComponent();
-        }
-
-        private void EditTaskAppBarIconButton_Click(object sender, EventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/EditTask.xaml", UriKind.Relative));
         }
     }
 }

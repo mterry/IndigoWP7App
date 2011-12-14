@@ -19,12 +19,12 @@
 		<!--Pivot Control-->
 		<controls:Pivot x:Name="ProjectDetailPivot" Title="project indigo">
 			<!--Pivot item one-->
-			<controls:PivotItem Header="project detail">
+			<controls:PivotItem x:Name="ProjectDetailPivotItem" Header="project detail">
 				<Grid/>
 			</controls:PivotItem>
 
  			<!--Pivot item two-->
-			<controls:PivotItem Header="iterations">
+			<controls:PivotItem x:Name="ProjectIterationsPivotItem" Header="iterations">
 				<Grid/>
 			</controls:PivotItem>
 		</controls:Pivot>

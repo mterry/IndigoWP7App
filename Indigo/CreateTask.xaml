@@ -4,18 +4,18 @@
 	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
 	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="LoginPage"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="CreateTaskPage"
 	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
-	x:Class="Indigo.Login"
+	x:Class="Indigo.CreateTask"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
 	Orientation="Portrait"
-	shell:SystemTray.IsVisible="True" SupportedOrientations="PortraitOrLandscape">
+	shell:SystemTray.IsVisible="True">
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar>
-			<shell:ApplicationBarIconButton x:Name="SubmitAppBarIconButton" IconUri="/icons/appbar.check.rest.png" Text="login" Click="Submit_Click"/>
-			<shell:ApplicationBarIconButton x:Name="CancelAppBarIconButton" IconUri="/icons/appbar.close.rest.png" Text="cancel" Click="Cancel_Click"/>
+			<shell:ApplicationBarIconButton x:Name="SaveChangesAppBarIconButton" IconUri="/icons/appbar.check.rest.png" Text="save"/>
+			<shell:ApplicationBarIconButton x:Name="CancelChangesAppBarIconButton" IconUri="/icons/appbar.close.rest.png" Text="cancel"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
 
@@ -29,15 +29,10 @@
 		<!--TitlePanel contains the name of the application and page title-->
 		<StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
 			<TextBlock x:Name="ApplicationTitle" Text="project indigo" Style="{StaticResource PhoneTextNormalStyle}"/>
-			<TextBlock x:Name="PageTitle" Text="login" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-		</StackPanel>
-		<StackPanel x:Name="ContentPanel" Margin="8" Grid.Row="1">
-			<TextBlock x:Name="UsernameLabel" TextWrapping="Wrap" Text="username"/>
-			<TextBox x:Name="UsernameTextBox" TextWrapping="Wrap"/>
-			<TextBlock x:Name="PasswordLabel" TextWrapping="Wrap" Text="password"/>
-			<PasswordBox x:Name="PasswordPBox"/>
+			<TextBlock x:Name="PageTitle" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"><Run Text="create"/><Run Text=" task"/></TextBlock>
 		</StackPanel>
 
 		<!--ContentPanel - place additional content here-->
+		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"/>
 	</Grid>
 </phone:PhoneApplicationPage>

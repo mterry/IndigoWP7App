@@ -5,8 +5,9 @@
 	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
 	xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="ProjectsPage"
-	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Indigo" x:Name="ProjectsPage"
+    xmlns:localViewModels="clr-namespace:Indigo.ViewModels"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696" 
 	x:Class="Indigo.MainPage"
 	d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
@@ -14,6 +15,13 @@
 	Foreground="{StaticResource PhoneForegroundBrush}"
 	SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
 	shell:SystemTray.IsVisible="True">
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar>
+			<shell:ApplicationBarIconButton x:Name="LoginAppBarIconButton" IconUri="/icons/appbar.lock.rest.png" Text="login" Click="Login_Click"/>
+			<shell:ApplicationBarIconButton x:Name="CreateUserAppBarIconButton" IconUri="/icons/appbar.add.rest.png" Text="create user" Click="CreateUser_Click"/>
+			<shell:ApplicationBarIconButton x:Name="LogoutAppBarIconButton" IconUri="/icons/appbar.back.rest.png" Text="logout" IsEnabled="False" Click="Logout_Click"/>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
 
 	<!--LayoutRoot is the root grid where all page content is placed-->
 	<Grid x:Name="LayoutRoot" Background="Transparent">
@@ -23,6 +31,23 @@
 
 			<!--Panorama item one-->
 			<controls:PanoramaItem x:Name="AllProjects" Header="all projects">
+                <ListBox x:Name ="AllProjectsListBox" ItemsSource="{Binding Path=AllProjects}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid x:Name="ProjectListItemContent" Height="100">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.2*"/>
+                                    <ColumnDefinition Width="0.8*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="ProjectIDField" Grid.Column="0" HorizontalAlignment="Left" Margin="8,0,0,20" TextWrapping="Wrap" Text="{Binding Path=Id}" VerticalAlignment="Bottom" FontSize="{StaticResource PhoneFontSizeExtraLarge}" Width="63" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                <StackPanel x:Name="ProjectTextStackPanel" Grid.Column="1">
+                                    <TextBlock x:Name="ProjectNameField" TextWrapping="Wrap" Text="{Binding Path=Name}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Foreground="{StaticResource PhoneAccentBrush}"/>
+                                    <TextBlock x:Name="ProjectDescriptionField" TextWrapping="Wrap" Text="{Binding Path=Description}" FontSize="{StaticResource PhoneFontSizeSmall}"/>
+                                </StackPanel>
+                            </Grid>		
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
 				<!--Double line list with text wrapping-->
 			</controls:PanoramaItem>
 
